@@ -491,6 +491,12 @@ body:not(.user-is-tabbing) a:focus {
 .work__image-box {
     margin-bottom: var(--gutter-normal);
 }
+.work__image {
+    max-height: 500px;
+    min-width: 700px;
+    object-fit: cover;
+    filter: grayscale(90%) opacity(1);
+}
 
 @media(min-width: 901px) {
     .work__image-box {
@@ -511,11 +517,13 @@ body:not(.user-is-tabbing) a:focus {
 
 .client__logos {
     display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
+    flex-wrap: wrap;
+    justify-content: center;
+    filter: invert(100%) grayscale(100%) opacity(1);
 }
 
 .client__logo {
+    margin: 5px;
     height: 6.5rem;
     max-width: 18rem;
 }
